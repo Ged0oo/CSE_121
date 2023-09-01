@@ -1,4 +1,4 @@
-﻿  main.c
-  StackArray.c
+﻿  StackArray.c
+  main.c
   Generating Code...
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe
