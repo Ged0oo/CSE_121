@@ -40,3 +40,6 @@ StackReturn_t StackEmpty(Stack_t* _stack)
 			return STACK_EMPTY;
 	}
 }
+
+
+

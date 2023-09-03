@@ -1,6 +1,8 @@
 #ifndef __STACK_ARRAY_H__
 #define __STACK_ARRAY_H__
 
+#include <stdio.h>
+
 #define NULL			(void*)0
 #define MaxStack		100
 
@@ -24,5 +26,9 @@ typedef enum
 StackReturn_t StackInit(Stack_t* _stack);
 StackReturn_t StackFull(Stack_t* _stack);
 StackReturn_t StackEmpty(Stack_t* _stack);
+StackReturn_t StackPush(Stack_t* _stack, StackEntry_t  _entry);
+StackReturn_t StackPup(Stack_t* _stack, StackEntry_t *_entry);
+
+
 
 #endif // !__STACK_ARRAY_H__
