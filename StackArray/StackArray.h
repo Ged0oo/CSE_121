@@ -32,6 +32,7 @@ StackReturn_t StackPup(Stack_t* _stack, StackEntry_t *_entry);
 StackReturn_t StackTop(Stack_t* _stack, StackEntry_t* _entry);
 StackReturn_t StackSize(Stack_t* _stack, int* _size);
 StackReturn_t StackClear(Stack_t* _stack);
+StackReturn_t StackDisplay(Stack_t* _stack);
 StackReturn_t StackTraverse(Stack_t* _stack, void (*pvisit)(StackEntry_t));
 
 

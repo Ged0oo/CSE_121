@@ -170,3 +170,28 @@ StackReturn_t StackTraverse(Stack_t* _stack, void (*pvisit)(StackEntry_t))
 	}
 }
 
+StackReturn_t StackDisplay(Stack_t* _stack)
+{
+	if (NULL == _stack)
+	{
+		return STACK_NULL;
+	}
+	else if (_stack->top < -1)
+	{
+		return STACK_NOT_INTIALIZED;
+	}
+	else if (STACK_EMPTY == StackFull(_stack))
+	{
+		return STACK_EMPTY;
+	}
+	else
+	{
+		printf("\nStack Display\n[ ");
+		for (int i = _stack->top; i >= 0; i--)
+		{
+			printf(" %d ", _stack->entry[i]);
+		}
+		printf(" ]\n");
+		return STACK_OK;
+	}
+}

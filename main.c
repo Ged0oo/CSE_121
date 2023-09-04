@@ -11,6 +11,11 @@ void main(void)
 	ret = StackPush(&stack, 5);
 	ret = StackPush(&stack, 10);
 	ret = StackPush(&stack, 3);
+
+	ret = StackDisplay(&stack);
+
 	ret = StackPup(&stack, &st);
+
+	ret = StackDisplay(&stack);
 
 }
