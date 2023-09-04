@@ -1,11 +1,7 @@
-﻿  StackArray.c
+﻿  main.c
 E:\Projects\DataStructures\DataStructures\StackArray\StackArray.h(6,1): warning C4005: 'NULL': macro redefinition
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(235,1): message : see previous definition of 'NULL'
-  main.c
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.h(6,1): warning C4005: 'NULL': macro redefinition
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(235,1): message : see previous definition of 'NULL'
-  Generating Code...
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.c(42): warning C4715: 'StackEmpty': not all control paths return a value
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.c(28): warning C4715: 'StackFull': not all control paths return a value
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.c(14): warning C4715: 'StackInit': not all control paths return a value
+E:\Projects\DataStructures\DataStructures\main.c(11,26): warning C4022: 'StackPush': pointer mismatch for actual parameter 2
+E:\Projects\DataStructures\DataStructures\main.c(12,26): warning C4022: 'StackPush': pointer mismatch for actual parameter 2
+E:\Projects\DataStructures\DataStructures\main.c(13,26): warning C4022: 'StackPush': pointer mismatch for actual parameter 2
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe

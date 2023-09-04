@@ -9,6 +9,7 @@ StackReturn_t StackInit(Stack_t* _stack)
 	else
 	{
 		_stack->top = -1;
+		return STACK_OK;
 	}
 	
 }
@@ -49,7 +50,7 @@ StackReturn_t StackPush(Stack_t* _stack, StackEntry_t  _entry)
 	{
 		return STACK_NULL;
 	}
-	else if (STACK_NOT_INTIALIZED == StackInit(_stack))
+	else if (_stack->top < -1)
 	{
 		return STACK_NOT_INTIALIZED;
 	}
@@ -59,7 +60,7 @@ StackReturn_t StackPush(Stack_t* _stack, StackEntry_t  _entry)
 	}
 	else 
 	{	
-		_stack->top++;
+		_stack->top += 1;
 		_stack->entry[_stack->top] = _entry;	
 		return STACK_OK;
 	}
@@ -68,11 +69,11 @@ StackReturn_t StackPush(Stack_t* _stack, StackEntry_t  _entry)
 
 StackReturn_t StackPup(Stack_t* _stack, StackEntry_t* _entry)
 {
-	if ((NULL == _stack) || (NULL == _entry))
+	if (NULL == _stack)
 	{
 		return STACK_NULL;
 	}
-	else if (STACK_NOT_INTIALIZED == StackInit(_stack))
+	else if (_stack->top < -1)
 	{
 		return STACK_NOT_INTIALIZED;
 	}
@@ -82,8 +83,8 @@ StackReturn_t StackPup(Stack_t* _stack, StackEntry_t* _entry)
 	}
 	else
 	{
-		_stack->top--;
 		*_entry = _stack->entry[_stack->top];
+		_stack->top -= 1;
 		return STACK_OK;
 	}
 }
@@ -91,11 +92,11 @@ StackReturn_t StackPup(Stack_t* _stack, StackEntry_t* _entry)
 
 StackReturn_t StackTop(Stack_t* _stack, StackEntry_t* _entry)
 {
-	if ((NULL == _stack) || (NULL == _entry))
+	if (NULL == _stack) 
 	{
 		return STACK_NULL;
 	}
-	else if (STACK_NOT_INTIALIZED == StackInit(_stack))
+	else if (_stack->top < -1)
 	{
 		return STACK_NOT_INTIALIZED;
 	}
@@ -117,13 +118,13 @@ StackReturn_t StackSize(Stack_t* _stack, int* _size)
 	{
 		return STACK_NULL;
 	}
-	else if (STACK_NOT_INTIALIZED == StackInit(_stack))
+	else if (_stack->top < -1)
 	{
 		return STACK_NOT_INTIALIZED;
 	}
 	else
 	{
-		*_size = ++ _stack->top ;
+		*_size = _stack->top + 1;
 		return STACK_OK;
 	}
 }
@@ -135,7 +136,7 @@ StackReturn_t StackClear(Stack_t* _stack)
 	{
 		return STACK_NULL;
 	}
-	else if (STACK_NOT_INTIALIZED == StackInit(_stack))
+	else if (_stack->top < -1)
 	{
 		return STACK_NOT_INTIALIZED;
 	}
@@ -153,7 +154,7 @@ StackReturn_t StackTraverse(Stack_t* _stack, void (*pvisit)(StackEntry_t))
 	{
 		return STACK_NULL;
 	}
-	else if (STACK_NOT_INTIALIZED == StackInit(_stack))
+	else if (_stack->top < -1)
 	{
 		return STACK_NOT_INTIALIZED;
 	}
@@ -168,3 +169,4 @@ StackReturn_t StackTraverse(Stack_t* _stack, void (*pvisit)(StackEntry_t))
 		return STACK_OK;
 	}
 }
+
