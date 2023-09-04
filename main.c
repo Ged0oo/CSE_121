@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include "StackArray/StackArray.h"
 
+void disStack(StackEntry_t st)
+{
+	printf(" %s ", st);
+}
+
 void main(void)
 {
 	Stack_t stack;
@@ -8,14 +13,16 @@ void main(void)
 	StackEntry_t st = NULL;
 
 	ret = StackInit(&stack);
-	ret = StackPush(&stack, 5);
-	ret = StackPush(&stack, 10);
-	ret = StackPush(&stack, 3);
 
-	ret = StackDisplay(&stack);
+	ret = StackPush(&stack, "Mabrock");
+	ret = StackPush(&stack, "Nagy");
+	ret = StackPush(&stack, "Mohamed");
+
+	ret = StackTraverse(&stack, disStack);
+	printf("\n");
 
 	ret = StackPup(&stack, &st);
 
-	ret = StackDisplay(&stack);
-
+	ret = StackTraverse(&stack, disStack);
+	printf("\n");
 }

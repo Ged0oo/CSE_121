@@ -1,15 +1,5 @@
-﻿  StackArray.c
+﻿  main.c
 E:\Projects\DataStructures\DataStructures\StackArray\StackArray.h(6,1): warning C4005: 'NULL': macro redefinition
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(235,1): message : see previous definition of 'NULL'
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.c(192,11): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'StackEntry_t'
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.c(192,11): warning C4313: 'printf': '%d' in format string conflicts with argument 1 of type 'StackEntry_t'
-  main.c
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.h(6,1): warning C4005: 'NULL': macro redefinition
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(235,1): message : see previous definition of 'NULL'
-E:\Projects\DataStructures\DataStructures\main.c(11,26): warning C4022: 'StackPush': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(12,26): warning C4022: 'StackPush': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(13,26): warning C4022: 'StackPush': pointer mismatch for actual parameter 2
-  Generating Code...
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.c(43): warning C4715: 'StackEmpty': not all control paths return a value
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.c(29): warning C4715: 'StackFull': not all control paths return a value
+E:\Projects\DataStructures\DataStructures\main.c(6,9): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'StackEntry_t'
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe
