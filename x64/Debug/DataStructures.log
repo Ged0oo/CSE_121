@@ -1,6 +1,13 @@
-﻿  StackArray.c
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.h(6,1): warning C4005: 'NULL': macro redefinition
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(235,1): message : see previous definition of 'NULL'
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.c(218,11): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'StackEntry_t'
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.c(150): warning C4716: 'StackArraySize': must return a value
+﻿cl : command line  warning D9014: invalid value '2143' for '/wd'; assuming '5999'
+  StackLinked.c
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(13): warning C4716: 'StackLinkedFull': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(19): warning C4716: 'StackLinkedEmpty': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(7): warning C4716: 'StackLinkedInit': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(25): warning C4716: 'StackLinkedPush': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(37): warning C4716: 'StackLinkedTop': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(43): warning C4716: 'StackLinkedSize': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(31): warning C4716: 'StackLinkedPup': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(49): warning C4716: 'StackLinkedClear': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(55): warning C4716: 'StackLinkedDisplay': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(61): warning C4716: 'StackLinkedTraverse': must return a value
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe
