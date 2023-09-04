@@ -1,5 +1,6 @@
-﻿  main.c
+﻿  StackArray.c
 E:\Projects\DataStructures\DataStructures\StackArray\StackArray.h(6,1): warning C4005: 'NULL': macro redefinition
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(235,1): message : see previous definition of 'NULL'
-E:\Projects\DataStructures\DataStructures\main.c(6,9): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'StackEntry_t'
+E:\Projects\DataStructures\DataStructures\StackArray\StackArray.c(218,11): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'StackEntry_t'
+E:\Projects\DataStructures\DataStructures\StackArray\StackArray.c(150): warning C4716: 'StackArraySize': must return a value
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe

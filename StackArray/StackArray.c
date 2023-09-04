@@ -1,6 +1,6 @@
 #include "StackArray.h"
 
-StackReturn_t StackInit(Stack_t* _stack)
+StackReturn_t StackArrayInit(Stack_t* _stack)
 {
 	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
@@ -16,7 +16,7 @@ StackReturn_t StackInit(Stack_t* _stack)
 }
 
 
-StackReturn_t StackFull(Stack_t* _stack)
+StackReturn_t StackArrayFull(Stack_t* _stack)
 {
 	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
@@ -34,7 +34,7 @@ StackReturn_t StackFull(Stack_t* _stack)
 }
 
 
-StackReturn_t StackEmpty(Stack_t* _stack)
+StackReturn_t StackArrayEmpty(Stack_t* _stack)
 {
 	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
@@ -56,7 +56,7 @@ StackReturn_t StackEmpty(Stack_t* _stack)
 }
 
 
-StackReturn_t StackPush(Stack_t* _stack, StackEntry_t  _entry)
+StackReturn_t StackArrayPush(Stack_t* _stack, StackEntry_t  _entry)
 {
 	StackReturn_t ret = STACK_OK;
 	StackReturn_t stackRet = STACK_OK;
@@ -68,7 +68,7 @@ StackReturn_t StackPush(Stack_t* _stack, StackEntry_t  _entry)
 	{
 		ret = STACK_NOT_INTIALIZED;
 	}
-	else if (STACK_FULL == StackFull(_stack))
+	else if (STACK_FULL == StackArrayFull(_stack))
 	{
 		ret = STACK_FULL;
 	}
@@ -82,7 +82,7 @@ StackReturn_t StackPush(Stack_t* _stack, StackEntry_t  _entry)
 }
 
 
-StackReturn_t StackPup(Stack_t* _stack, StackEntry_t* _entry)
+StackReturn_t StackArrayPup(Stack_t* _stack, StackEntry_t* _entry)
 {
 	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
@@ -93,7 +93,7 @@ StackReturn_t StackPup(Stack_t* _stack, StackEntry_t* _entry)
 	{
 		ret = STACK_NOT_INTIALIZED;
 	}
-	else if (STACK_EMPTY == StackFull(_stack))
+	else if (STACK_EMPTY == StackArrayFull(_stack))
 	{
 		ret = STACK_EMPTY;
 	}
@@ -107,7 +107,7 @@ StackReturn_t StackPup(Stack_t* _stack, StackEntry_t* _entry)
 }
 
 
-StackReturn_t StackTop(Stack_t* _stack, StackEntry_t* _entry)
+StackReturn_t StackArrayTop(Stack_t* _stack, StackEntry_t* _entry)
 {
 	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack) 
@@ -118,7 +118,7 @@ StackReturn_t StackTop(Stack_t* _stack, StackEntry_t* _entry)
 	{
 		ret = STACK_NOT_INTIALIZED;
 	}
-	else if (STACK_EMPTY == StackFull(_stack))
+	else if (STACK_EMPTY == StackArrayFull(_stack))
 	{
 		ret = STACK_EMPTY;
 	}
@@ -131,7 +131,7 @@ StackReturn_t StackTop(Stack_t* _stack, StackEntry_t* _entry)
 }
 
 
-StackReturn_t StackSize(Stack_t* _stack, int* _size)
+StackReturn_t StackArraySize(Stack_t* _stack, int* _size)
 {
 	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
@@ -150,7 +150,7 @@ StackReturn_t StackSize(Stack_t* _stack, int* _size)
 }
 
 
-StackReturn_t StackClear(Stack_t* _stack)
+StackReturn_t StackArrayClear(Stack_t* _stack)
 {
 	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
@@ -170,7 +170,7 @@ StackReturn_t StackClear(Stack_t* _stack)
 }
 
 
-StackReturn_t StackTraverse(Stack_t* _stack, void (*pvisit)(StackEntry_t))
+StackReturn_t StackArrayTraverse(Stack_t* _stack, void (*pvisit)(StackEntry_t))
 {
 	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
@@ -181,7 +181,7 @@ StackReturn_t StackTraverse(Stack_t* _stack, void (*pvisit)(StackEntry_t))
 	{
 		ret = STACK_NOT_INTIALIZED;
 	}
-	else if (STACK_EMPTY == StackFull(_stack))
+	else if (STACK_EMPTY == StackArrayFull(_stack))
 	{
 		ret = STACK_EMPTY;
 	}
@@ -194,7 +194,8 @@ StackReturn_t StackTraverse(Stack_t* _stack, void (*pvisit)(StackEntry_t))
 	return ret;
 }
 
-StackReturn_t StackDisplay(Stack_t* _stack)
+
+StackReturn_t StackArrayDisplay(Stack_t* _stack)
 {
 	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
@@ -205,7 +206,7 @@ StackReturn_t StackDisplay(Stack_t* _stack)
 	{
 		ret = STACK_NOT_INTIALIZED;
 	}
-	else if (STACK_EMPTY == StackFull(_stack))
+	else if (STACK_EMPTY == StackArrayFull(_stack))
 	{
 		ret = STACK_EMPTY;
 	}

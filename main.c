@@ -12,19 +12,19 @@ void main(void)
 	StackReturn_t ret;
 	StackEntry_t st = NULL;
 
-	ret = StackInit(&stack);
-	ret = StackEmpty(&stack);
+	ret = StackArrayInit(&stack);
+	ret = StackArrayEmpty(&stack);
 	
-	ret = StackPush(&stack, "Mabrock");
-	ret = StackPush(&stack, "Nagy");
-	ret = StackPush(&stack, "Mohamed");
+	ret = StackArrayPush(&stack, "Mabrock");
+	ret = StackArrayPush(&stack, "Nagy");
+	ret = StackArrayPush(&stack, "Mohamed");
 
-	ret = StackEmpty(&stack);
+	ret = StackArrayEmpty(&stack);
 
-	ret = StackTraverse(&stack, disStack);
+	ret = StackArrayTraverse(&stack, disStack);
 	printf("\n");
 
-	ret = StackPup(&stack, &st);
+	ret = StackArrayPup(&stack, &st);
 
-	ret = StackDisplay(&stack);
+	ret = StackArrayDisplay(&stack);
 }

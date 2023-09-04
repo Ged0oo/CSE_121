@@ -23,17 +23,17 @@ typedef enum
 	STACK_NOT_INTIALIZED
 }StackReturn_t;
 
-StackReturn_t StackInit(Stack_t* _stack);
-StackReturn_t StackFull(Stack_t* _stack);
-StackReturn_t StackEmpty(Stack_t* _stack);
-StackReturn_t StackPush(Stack_t* _stack, StackEntry_t  _entry);
-StackReturn_t StackPup(Stack_t* _stack, StackEntry_t *_entry);
+StackReturn_t StackArrayInit(Stack_t* _stack);
+StackReturn_t StackArrayFull(Stack_t* _stack);
+StackReturn_t StackArrayEmpty(Stack_t* _stack);
+StackReturn_t StackArrayPush(Stack_t* _stack, StackEntry_t  _entry);
+StackReturn_t StackArrayPup(Stack_t* _stack, StackEntry_t *_entry);
 
-StackReturn_t StackTop(Stack_t* _stack, StackEntry_t* _entry);
-StackReturn_t StackSize(Stack_t* _stack, int* _size);
-StackReturn_t StackClear(Stack_t* _stack);
-StackReturn_t StackDisplay(Stack_t* _stack);
-StackReturn_t StackTraverse(Stack_t* _stack, void (*pvisit)(StackEntry_t));
+StackReturn_t StackArrayTop(Stack_t* _stack, StackEntry_t* _entry);
+StackReturn_t StackArraySize(Stack_t* _stack, int* _size);
+StackReturn_t StackArrayClear(Stack_t* _stack);
+StackReturn_t StackArrayDisplay(Stack_t* _stack);
+StackReturn_t StackArrayTraverse(Stack_t* _stack, void (*pvisit)(StackEntry_t));
 
 
 #endif // !__STACK_ARRAY_H__
