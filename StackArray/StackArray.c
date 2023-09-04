@@ -2,35 +2,41 @@
 
 StackReturn_t StackInit(Stack_t* _stack)
 {
+	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
 	{
-		return STACK_NULL;
+		ret = STACK_NULL;
 	}
 	else
 	{
 		_stack->top = -1;
-		return STACK_OK;
+		ret = STACK_OK;
 	}
-	
+	return ret;
 }
 
 
 StackReturn_t StackFull(Stack_t* _stack)
 {
+	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
 	{
-		return STACK_NULL;
+		ret = STACK_NULL;
 	}
 	else
 	{
 		if (_stack->top >= MaxStack)
-			return STACK_FULL;
+			ret = STACK_FULL;
+		else 
+			ret = STACK_OK;
 	}
+	return ret;
 }
 
 
 StackReturn_t StackEmpty(Stack_t* _stack)
 {
+	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
 	{
 		return STACK_NULL;
@@ -38,160 +44,180 @@ StackReturn_t StackEmpty(Stack_t* _stack)
 	else
 	{
 		if (_stack->top == -1)
-			return STACK_EMPTY;
+		{
+			ret = STACK_EMPTY;
+		}
+		else
+		{
+			ret = STACK_OK;
+		}
 	}
+	return ret;
 }
 
 
 StackReturn_t StackPush(Stack_t* _stack, StackEntry_t  _entry)
 {
+	StackReturn_t ret = STACK_OK;
 	StackReturn_t stackRet = STACK_OK;
 	if(NULL == _stack)
 	{
-		return STACK_NULL;
+		ret = STACK_NULL;
 	}
 	else if (_stack->top < -1)
 	{
-		return STACK_NOT_INTIALIZED;
+		ret = STACK_NOT_INTIALIZED;
 	}
 	else if (STACK_FULL == StackFull(_stack))
 	{
-		return STACK_FULL;
+		ret = STACK_FULL;
 	}
 	else 
 	{	
 		_stack->top += 1;
 		_stack->entry[_stack->top] = _entry;	
-		return STACK_OK;
+		ret = STACK_OK;
 	}
+	return ret;
 }
 
 
 StackReturn_t StackPup(Stack_t* _stack, StackEntry_t* _entry)
 {
+	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
 	{
-		return STACK_NULL;
+		ret = STACK_NULL;
 	}
 	else if (_stack->top < -1)
 	{
-		return STACK_NOT_INTIALIZED;
+		ret = STACK_NOT_INTIALIZED;
 	}
 	else if (STACK_EMPTY == StackFull(_stack))
 	{
-		return STACK_EMPTY;
+		ret = STACK_EMPTY;
 	}
 	else
 	{
 		*_entry = _stack->entry[_stack->top];
 		_stack->top -= 1;
-		return STACK_OK;
+		ret = STACK_OK;
 	}
+	return ret;
 }
 
 
 StackReturn_t StackTop(Stack_t* _stack, StackEntry_t* _entry)
 {
+	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack) 
 	{
-		return STACK_NULL;
+		ret = STACK_NULL;
 	}
 	else if (_stack->top < -1)
 	{
-		return STACK_NOT_INTIALIZED;
+		ret = STACK_NOT_INTIALIZED;
 	}
 	else if (STACK_EMPTY == StackFull(_stack))
 	{
-		return STACK_EMPTY;
+		ret = STACK_EMPTY;
 	}
 	else
 	{
 		*_entry = _stack->entry[-- _stack->top];
-		return STACK_OK;
+		ret = STACK_OK;
 	}
+	return ret;
 }
 
 
 StackReturn_t StackSize(Stack_t* _stack, int* _size)
 {
+	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
 	{
-		return STACK_NULL;
+		ret = STACK_NULL;
 	}
 	else if (_stack->top < -1)
 	{
-		return STACK_NOT_INTIALIZED;
+		ret = STACK_NOT_INTIALIZED;
 	}
 	else
 	{
 		*_size = _stack->top + 1;
-		return STACK_OK;
+		ret = STACK_OK;
 	}
 }
 
 
 StackReturn_t StackClear(Stack_t* _stack)
 {
+	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
 	{
-		return STACK_NULL;
+		ret = STACK_NULL;
 	}
 	else if (_stack->top < -1)
 	{
-		return STACK_NOT_INTIALIZED;
+		ret = STACK_NOT_INTIALIZED;
 	}
 	else
 	{
 		_stack->top = -1;
-		return STACK_OK;
+		ret = STACK_OK;
 	}
+	return ret;
 }
 
 
 StackReturn_t StackTraverse(Stack_t* _stack, void (*pvisit)(StackEntry_t))
 {
+	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
 	{
-		return STACK_NULL;
+		ret = STACK_NULL;
 	}
 	else if (_stack->top < -1)
 	{
-		return STACK_NOT_INTIALIZED;
+		ret = STACK_NOT_INTIALIZED;
 	}
 	else if (STACK_EMPTY == StackFull(_stack))
 	{
-		return STACK_EMPTY;
+		ret = STACK_EMPTY;
 	}
 	else
 	{
 		for (int i = _stack->top; i >= 0; i--)
 			(*pvisit)(_stack->entry[i]);
-		return STACK_OK;
+		ret = STACK_OK;
 	}
+	return ret;
 }
 
 StackReturn_t StackDisplay(Stack_t* _stack)
 {
+	StackReturn_t ret = STACK_OK;
 	if (NULL == _stack)
 	{
-		return STACK_NULL;
+		ret = STACK_NULL;
 	}
 	else if (_stack->top < -1)
 	{
-		return STACK_NOT_INTIALIZED;
+		ret = STACK_NOT_INTIALIZED;
 	}
 	else if (STACK_EMPTY == StackFull(_stack))
 	{
-		return STACK_EMPTY;
+		ret = STACK_EMPTY;
 	}
 	else
 	{
 		printf("\nStack Display\n[ ");
 		for (int i = _stack->top; i >= 0; i--)
 		{
-			printf(" %d ", _stack->entry[i]);
+			printf(" %s ", _stack->entry[i]);
 		}
 		printf(" ]\n");
-		return STACK_OK;
+		ret = STACK_OK;
 	}
+	return ret;
 }
