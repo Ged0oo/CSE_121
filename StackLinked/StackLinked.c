@@ -58,7 +58,7 @@ StackReturn_t StackLinkedPush(StackLinked_t* _stack, StackEntry_t  _entry)
 }
 
 
-StackReturn_t StackLinkedPup(StackLinked_t* _stack, StackEntry_t* _entry)
+StackReturn_t StackLinkedPop(StackLinked_t* _stack, StackEntry_t* _entry)
 {
 	StackReturn_t ret = STACK_LINKED_OK;
 	if (NULL == _stack)
@@ -83,7 +83,21 @@ StackReturn_t StackLinkedPup(StackLinked_t* _stack, StackEntry_t* _entry)
 
 StackReturn_t StackLinkedTop(StackLinked_t* _stack, StackEntry_t* _entry)
 {
-
+	StackReturn_t ret = STACK_LINKED_OK;
+	if (NULL == _stack)
+	{
+		ret = STACK_LINKED_NULL;
+	}
+	else if (STACK_LINKED_EMPTY == StackLinkedEmpty(_stack))
+	{
+		ret = STACK_LINKED_EMPTY;
+	}
+	else
+	{
+		*_entry = _stack->top->entry;
+		ret = STACK_LINKED_OK;
+	}
+	return ret;
 }
 
 

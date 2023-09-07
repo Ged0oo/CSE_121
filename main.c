@@ -8,21 +8,36 @@ void main(void)
 	StackLinked_t stack;
 	StackReturn_t ret;
 	StackEntry_t entry;
+	StackEntry_t top;
 
 	ret = StackLinkedInit(&stack);
 
 	ret = StackLinkedEmpty(&stack);
 
 	ret = StackLinkedPush(&stack, 7);
+	ret = StackLinkedTop(&stack, &top);
+
 	ret = StackLinkedPush(&stack, 25);
+	ret = StackLinkedTop(&stack, &top);
+
 	ret = StackLinkedPush(&stack, 2);
+	ret = StackLinkedTop(&stack, &top);
 
-	ret = StackLinkedPup(&stack, &entry);
-	ret = StackLinkedPup(&stack, &entry);
-	ret = StackLinkedPup(&stack, &entry);
 
-	ret = StackLinkedPup(&stack, &entry);
-	ret = StackLinkedPup(&stack, &entry);
+	ret = StackLinkedPop(&stack, &entry);
+	ret = StackLinkedTop(&stack, &top);
+
+	ret = StackLinkedPop(&stack, &entry);
+	ret = StackLinkedTop(&stack, &top);
+
+	ret = StackLinkedPop(&stack, &entry);
+	ret = StackLinkedTop(&stack, &top);
+
+	ret = StackLinkedPop(&stack, &entry);
+	ret = StackLinkedTop(&stack, &top);
+
+	ret = StackLinkedPop(&stack, &entry);
+	ret = StackLinkedTop(&stack, &top);
 
 	ret = StackLinkedEmpty(&stack);
 

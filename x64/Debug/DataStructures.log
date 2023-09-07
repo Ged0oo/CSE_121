@@ -1,8 +1,7 @@
 ﻿cl : command line  warning D9014: invalid value '2143' for '/wd'; assuming '5999'
-  main.c
-E:\Projects\DataStructures\DataStructures\StackArray\StackArray.h(6,1): warning C4005: 'NULL': macro redefinition
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(235,1): message : see previous definition of 'NULL'
-E:\Projects\DataStructures\DataStructures\main.c(16,32): warning C4022: 'StackLinkedPush': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(17,32): warning C4022: 'StackLinkedPush': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(18,32): warning C4022: 'StackLinkedPush': pointer mismatch for actual parameter 2
+  StackLinked.c
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(113): warning C4716: 'StackLinkedClear': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(107): warning C4716: 'StackLinkedSize': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(119): warning C4716: 'StackLinkedDisplay': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(125): warning C4716: 'StackLinkedTraverse': must return a value
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe

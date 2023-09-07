@@ -27,7 +27,7 @@ StackReturn_t StackArrayInit(Stack_t* _stack);
 StackReturn_t StackArrayFull(Stack_t* _stack);
 StackReturn_t StackArrayEmpty(Stack_t* _stack);
 StackReturn_t StackArrayPush(Stack_t* _stack, StackEntry_t  _entry);
-StackReturn_t StackArrayPup(Stack_t* _stack, StackEntry_t *_entry);
+StackReturn_t StackArrayPop(Stack_t* _stack, StackEntry_t *_entry);
 
 StackReturn_t StackArrayTop(Stack_t* _stack, StackEntry_t* _entry);
 StackReturn_t StackArraySize(Stack_t* _stack, int* _size);

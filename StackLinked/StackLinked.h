@@ -29,7 +29,7 @@ typedef enum
 StackReturn_t StackLinkedInit(StackLinked_t* _stack);
 StackReturn_t StackLinkedEmpty(StackLinked_t* _stack);
 StackReturn_t StackLinkedPush(StackLinked_t* _stack, StackEntry_t  _entry);
-StackReturn_t StackLinkedPup(StackLinked_t* _stack, StackEntry_t* _entry);
+StackReturn_t StackLinkedPop(StackLinked_t* _stack, StackEntry_t* _entry);
 
 StackReturn_t StackLinkedTop(StackLinked_t* _stack, StackEntry_t* _entry);
 StackReturn_t StackLinkedSize(StackLinked_t* _stack, int* _size);
