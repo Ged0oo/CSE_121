@@ -3,6 +3,12 @@
 #include "StackLinked/StackLinked.h"
 
 
+void disStack(StackEntry_t entry)
+{
+	printf("  %s  ", entry);
+}
+
+
 void main(void)
 {
 	StackLinked_t stack;
@@ -18,6 +24,6 @@ void main(void)
 	ret = StackLinkedPush(&stack, "Nagy");
 	ret = StackLinkedPush(&stack, "Mohamed");
 
-	ret = StackLinkedDisplay(&stack);
+	ret = StackLinkedTraverse(&stack, disStack);
 }
 

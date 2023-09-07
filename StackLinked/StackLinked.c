@@ -170,7 +170,25 @@ StackReturn_t StackLinkedDisplay(StackLinked_t* _stack)
 
 StackReturn_t StackLinkedTraverse(StackLinked_t* _stack, void (*pvisit)(StackEntry_t))
 {
-
+	StackReturn_t ret = STACK_LINKED_OK;
+	if (NULL == _stack)
+	{
+		ret = STACK_LINKED_NULL;
+	}
+	else if (STACK_LINKED_EMPTY == StackLinkedEmpty(_stack))
+	{
+		ret = STACK_LINKED_EMPTY;
+	}
+	else
+	{
+		StackNode_t* node = _stack->top;
+		for (node; node != NULL; node = node->next)
+		{
+			(*pvisit)(node->entry);
+		}
+		ret = STACK_LINKED_OK;
+	}
+	return ret;
 }
 
 
