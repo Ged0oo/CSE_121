@@ -60,7 +60,24 @@ StackReturn_t StackLinkedPush(StackLinked_t* _stack, StackEntry_t  _entry)
 
 StackReturn_t StackLinkedPup(StackLinked_t* _stack, StackEntry_t* _entry)
 {
-
+	StackReturn_t ret = STACK_LINKED_OK;
+	if (NULL == _stack)
+	{
+		ret = STACK_LINKED_NULL;
+	}
+	else if (STACK_LINKED_EMPTY == StackLinkedEmpty(_stack))
+	{
+		ret = STACK_LINKED_EMPTY;
+	}
+	else
+	{
+		StackNode_t* node = _stack->top;
+		_entry = node->entry;
+		_stack->top = node->next;
+		free(node);
+		ret = STACK_LINKED_OK;
+	}
+	return ret;
 }
 
 

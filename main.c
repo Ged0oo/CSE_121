@@ -7,6 +7,7 @@ void main(void)
 {
 	StackLinked_t stack;
 	StackReturn_t ret;
+	StackEntry_t entry;
 
 	ret = StackLinkedInit(&stack);
 
@@ -16,7 +17,14 @@ void main(void)
 	ret = StackLinkedPush(&stack, 25);
 	ret = StackLinkedPush(&stack, 2);
 
+	ret = StackLinkedPup(&stack, &entry);
+	ret = StackLinkedPup(&stack, &entry);
+	ret = StackLinkedPup(&stack, &entry);
 
+	ret = StackLinkedPup(&stack, &entry);
+	ret = StackLinkedPup(&stack, &entry);
+
+	ret = StackLinkedEmpty(&stack);
 
 	printf("\nHello_World\n");
 }
