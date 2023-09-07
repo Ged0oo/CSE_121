@@ -14,16 +14,10 @@ void main(void)
 	ret = StackLinkedInit(&stack);
 	ret = StackLinkedEmpty(&stack);
 
-	ret = StackLinkedPush(&stack, 7);
-	ret = StackLinkedPush(&stack, 25);
-	ret = StackLinkedPush(&stack, 2);
+	ret = StackLinkedPush(&stack, "Mabrock");
+	ret = StackLinkedPush(&stack, "Nagy");
+	ret = StackLinkedPush(&stack, "Mohamed");
 
-	ret = StackLinkedSize(&stack, &size);
-
-	ret = StackLinkedClear(&stack);
-
-	ret = StackLinkedSize(&stack, &size);
-
-	printf("\nHello_World\n");
+	ret = StackLinkedDisplay(&stack);
 }
 

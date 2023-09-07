@@ -142,7 +142,29 @@ StackReturn_t StackLinkedClear(StackLinked_t* _stack)
 
 StackReturn_t StackLinkedDisplay(StackLinked_t* _stack)
 {
-
+	StackReturn_t ret = STACK_LINKED_OK;
+	if (NULL == _stack)
+	{
+		ret = STACK_LINKED_NULL;
+	}
+	else if (STACK_LINKED_EMPTY == StackLinkedEmpty(_stack))
+	{
+		ret = STACK_LINKED_EMPTY;
+	}
+	else
+	{
+		printf("\nStack Display\n[ ");
+		StackNode_t* node = _stack->top;
+		while (node != NULL)
+		{
+			printf(" %s ", node->entry);
+			node = node->next;
+		}
+		printf(" ]\n");
+		ret = STACK_LINKED_OK;
+		
+	}
+	return ret;
 }
 
 
