@@ -1,27 +1,60 @@
 #include "StackLinked.h"
 
 
+
+static StackNode_t* createNode(StackEntry_t _entry);
+
+
 StackReturn_t StackLinkedInit(StackLinked_t* _stack)
 {
-
-}
-
-
-StackReturn_t StackLinkedFull(StackLinked_t* _stack)
-{
-
+	StackReturn_t ret = STACK_LINKED_OK;
+	if (NULL == _stack)
+	{
+		ret = STACK_LINKED_NULL;
+	}
+	else
+	{
+		_stack->top = NULL;
+		ret = STACK_LINKED_OK;
+	}
+	return ret;
 }
 
 
 StackReturn_t StackLinkedEmpty(StackLinked_t* _stack)
 {
-
+	StackReturn_t ret = STACK_LINKED_OK;
+	if (NULL == _stack)
+	{
+		ret = STACK_LINKED_NULL;
+	}
+	else
+	{
+		if (NULL == _stack->top)
+		{
+			ret = STACK_LINKED_EMPTY;
+		}
+		else { /* Nothing */ }
+	}
+	return ret;
 }
 
 
 StackReturn_t StackLinkedPush(StackLinked_t* _stack, StackEntry_t  _entry)
 {
-
+	StackReturn_t ret = STACK_LINKED_OK;
+	if (NULL == _stack)
+	{
+		ret = STACK_LINKED_NULL;
+	}
+	else
+	{
+		StackNode_t* newNode = createNode(_entry);
+		newNode->next = _stack->top;
+		_stack->top = newNode;
+		ret = STACK_LINKED_OK;
+	}
+	return ret;
 }
 
 
@@ -58,4 +91,21 @@ StackReturn_t StackLinkedDisplay(StackLinked_t* _stack)
 StackReturn_t StackLinkedTraverse(StackLinked_t* _stack, void (*pvisit)(StackEntry_t))
 {
 
+}
+
+
+static StackNode_t* createNode(StackEntry_t _entry)
+{
+	StackNode_t* newNode = (StackNode_t*)malloc(sizeof(StackNode_t));
+	if (newNode == NULL) 
+	{
+		printf("Memory allocation failed.\n");
+		exit(1);
+	}
+	else
+	{
+		newNode->entry = _entry;
+		newNode->next = NULL;
+		return newNode;
+	}
 }

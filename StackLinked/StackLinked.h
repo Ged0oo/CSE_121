@@ -18,15 +18,14 @@ typedef struct stack
 
 typedef enum
 {
-	STACK_OK = 0,
-	STACK_NULL,
-	STACK_FULL,
-	STACK_EMPTY,
-	STACK_NOT_INTIALIZED
+	STACK_LINKED_OK = 0,
+	STACK_LINKED_NULL,
+	STACK_LINKED_FULL,
+	STACK_LINKED_EMPTY,
+	STACK_LINKED_NOT_INTIALIZED
 }StackReturn_t;
 
 StackReturn_t StackLinkedInit(StackLinked_t* _stack);
-StackReturn_t StackLinkedFull(StackLinked_t* _stack);
 StackReturn_t StackLinkedEmpty(StackLinked_t* _stack);
 StackReturn_t StackLinkedPush(StackLinked_t* _stack, StackEntry_t  _entry);
 StackReturn_t StackLinkedPup(StackLinked_t* _stack, StackEntry_t* _entry);
