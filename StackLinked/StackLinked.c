@@ -103,6 +103,18 @@ StackReturn_t StackLinkedTop(StackLinked_t* _stack, StackEntry_t* _entry)
 
 StackReturn_t StackLinkedSize(StackLinked_t* _stack, int* _size)
 {
+	StackReturn_t ret = STACK_LINKED_OK;
+	if (NULL == _stack)
+	{
+		ret = STACK_LINKED_NULL;
+	}
+	else
+	{
+		StackNode_t* node = _stack->top;
+		for (*_size = 0; node != NULL; node = node->next) (*_size)++;
+		ret = STACK_LINKED_OK;
+	}
+	return ret;
 
 }
 

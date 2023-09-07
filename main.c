@@ -11,35 +11,15 @@ void main(void)
 	StackEntry_t top;
 
 	ret = StackLinkedInit(&stack);
-
 	ret = StackLinkedEmpty(&stack);
 
 	ret = StackLinkedPush(&stack, 7);
-	ret = StackLinkedTop(&stack, &top);
-
 	ret = StackLinkedPush(&stack, 25);
-	ret = StackLinkedTop(&stack, &top);
-
 	ret = StackLinkedPush(&stack, 2);
-	ret = StackLinkedTop(&stack, &top);
 
+	int size = 0;
 
-	ret = StackLinkedPop(&stack, &entry);
-	ret = StackLinkedTop(&stack, &top);
-
-	ret = StackLinkedPop(&stack, &entry);
-	ret = StackLinkedTop(&stack, &top);
-
-	ret = StackLinkedPop(&stack, &entry);
-	ret = StackLinkedTop(&stack, &top);
-
-	ret = StackLinkedPop(&stack, &entry);
-	ret = StackLinkedTop(&stack, &top);
-
-	ret = StackLinkedPop(&stack, &entry);
-	ret = StackLinkedTop(&stack, &top);
-
-	ret = StackLinkedEmpty(&stack);
+	ret = StackLinkedSize(&stack, &size);
 
 	printf("\nHello_World\n");
 }
