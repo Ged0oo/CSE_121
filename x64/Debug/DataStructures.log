@@ -2,6 +2,9 @@
   main.c
 E:\Projects\DataStructures\DataStructures\StackArray\StackArray.h(6,1): warning C4005: 'NULL': macro redefinition
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(235,1): message : see previous definition of 'NULL'
+E:\Projects\DataStructures\DataStructures\main.c(17,32): warning C4022: 'StackLinkedPush': pointer mismatch for actual parameter 2
+E:\Projects\DataStructures\DataStructures\main.c(18,32): warning C4022: 'StackLinkedPush': pointer mismatch for actual parameter 2
+E:\Projects\DataStructures\DataStructures\main.c(19,32): warning C4022: 'StackLinkedPush': pointer mismatch for actual parameter 2
 E:\Projects\DataStructures\DataStructures\main.c(10,15): warning C4101: 'entry': unreferenced local variable
 E:\Projects\DataStructures\DataStructures\main.c(11,15): warning C4101: 'top': unreferenced local variable
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe

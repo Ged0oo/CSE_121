@@ -9,6 +9,7 @@ void main(void)
 	StackReturn_t ret;
 	StackEntry_t entry;
 	StackEntry_t top;
+	int size = 0;
 
 	ret = StackLinkedInit(&stack);
 	ret = StackLinkedEmpty(&stack);
@@ -17,7 +18,9 @@ void main(void)
 	ret = StackLinkedPush(&stack, 25);
 	ret = StackLinkedPush(&stack, 2);
 
-	int size = 0;
+	ret = StackLinkedSize(&stack, &size);
+
+	ret = StackLinkedClear(&stack);
 
 	ret = StackLinkedSize(&stack, &size);
 

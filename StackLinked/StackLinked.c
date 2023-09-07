@@ -115,13 +115,28 @@ StackReturn_t StackLinkedSize(StackLinked_t* _stack, int* _size)
 		ret = STACK_LINKED_OK;
 	}
 	return ret;
-
 }
 
 
 StackReturn_t StackLinkedClear(StackLinked_t* _stack)
 {
-
+	StackReturn_t ret = STACK_LINKED_OK;
+	if (NULL == _stack)
+	{
+		ret = STACK_LINKED_NULL;
+	}
+	else
+	{
+		StackNode_t* node = _stack->top;
+		while (node != NULL)
+		{
+			node = node->next;
+			free(_stack->top);
+			_stack->top = node;
+		}
+		ret = STACK_LINKED_OK;
+	}
+	return ret;
 }
 
 
