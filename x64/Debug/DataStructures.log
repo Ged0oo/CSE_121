@@ -1,13 +1,9 @@
 ﻿cl : command line  warning D9014: invalid value '2143' for '/wd'; assuming '5999'
   StackLinked.c
-E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(99,39): warning C4013: 'malloc' undefined; assuming extern returning int
-E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(99,66): warning C4312: 'type cast': conversion from 'int' to 'StackNode_t *' of greater size
-E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(103,3): warning C4013: 'exit' undefined; assuming extern returning int
 E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(64): warning C4716: 'StackLinkedPup': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(88): warning C4716: 'StackLinkedDisplay': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(82): warning C4716: 'StackLinkedClear': must return a value
+E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(94): warning C4716: 'StackLinkedTraverse': must return a value
 E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(70): warning C4716: 'StackLinkedTop': must return a value
 E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(76): warning C4716: 'StackLinkedSize': must return a value
-E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(94): warning C4716: 'StackLinkedTraverse': must return a value
-E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(82): warning C4716: 'StackLinkedClear': must return a value
-E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(88): warning C4716: 'StackLinkedDisplay': must return a value
-E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(111): warning C4715: 'createNode': not all control paths return a value
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe

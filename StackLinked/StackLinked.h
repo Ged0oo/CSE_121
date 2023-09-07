@@ -2,6 +2,7 @@
 #define __STACK_LINKED_H__
 
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef void* StackEntry_t;
 
