@@ -29,7 +29,6 @@ typedef enum
 }QueueLinkedReturn_t;
 
 QueueLinkedReturn_t QueueLinkedInit(QueueLinked_t* _queue);
-QueueLinkedReturn_t QueueLinkedFull(QueueLinked_t* _queue);
 QueueLinkedReturn_t QueueLinkedEmpty(QueueLinked_t* _queue);
 QueueLinkedReturn_t QueueLinkedAppend(QueueLinked_t* _queue, QueueEntry_t  _entry);
 QueueLinkedReturn_t QueueLinkedServe(QueueLinked_t* _queue, QueueEntry_t* _entry);
