@@ -1,7 +1,5 @@
 ﻿cl : command line  warning D9014: invalid value '2143' for '/wd'; assuming '5999'
-  main.c
   QueueArray.c
-  StackLinked.c
-E:\Projects\DataStructures\DataStructures\StackLinked\StackLinked.c(160,11): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'StackEntry_t'
-  Generating Code...
+E:\Projects\DataStructures\DataStructures\QueueArray\QueueArray.c(191,11): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'QueueEntry_t'
+E:\Projects\DataStructures\DataStructures\QueueArray\QueueArray.c(128): warning C4716: 'QueueArrayTop': must return a value
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe

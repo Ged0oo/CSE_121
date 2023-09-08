@@ -2,8 +2,8 @@
 #define __STACK_ARRAY_H__
 
 #include <stdio.h>
+#include <stdlib.h>
 
-#define NULL			(void*)0
 #define MaxStack		100
 
 typedef void* StackEntry_t;
