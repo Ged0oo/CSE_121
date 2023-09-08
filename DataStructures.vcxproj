@@ -129,10 +129,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="QueueArray\QueueArray.c" />
     <ClCompile Include="StackArray\StackArray.c" />
     <ClCompile Include="StackLinked\StackLinked.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="QueueArray\QueueArray.h" />
     <ClInclude Include="StackArray\StackArray.h" />
     <ClInclude Include="StackLinked\StackLinked.h" />
   </ItemGroup>

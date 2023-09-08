@@ -19,6 +19,9 @@
     <Filter Include="StackLinked">
       <UniqueIdentifier>{e94ac0a9-4a57-4d2a-a00f-392d65e2ab54}</UniqueIdentifier>
     </Filter>
+    <Filter Include="QueueArray">
+      <UniqueIdentifier>{a829bbd7-a587-4988-8f33-4e8d55d0e9e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="StackArray\StackArray.c">
@@ -30,6 +33,9 @@
     <ClCompile Include="StackLinked\StackLinked.c">
       <Filter>StackLinked</Filter>
     </ClCompile>
+    <ClCompile Include="QueueArray\QueueArray.c">
+      <Filter>QueueArray</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StackArray\StackArray.h">
@@ -37,6 +43,9 @@
     </ClInclude>
     <ClInclude Include="StackLinked\StackLinked.h">
       <Filter>StackLinked</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueArray\QueueArray.h">
+      <Filter>QueueArray</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
