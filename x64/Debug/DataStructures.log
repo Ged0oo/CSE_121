@@ -1,5 +1,13 @@
 ﻿cl : command line  warning D9014: invalid value '2143' for '/wd'; assuming '5999'
-  QueueArray.c
-E:\Projects\DataStructures\DataStructures\QueueArray\QueueArray.c(191,11): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'QueueEntry_t'
-E:\Projects\DataStructures\DataStructures\QueueArray\QueueArray.c(128): warning C4716: 'QueueArrayTop': must return a value
+  QueueLinked.c
+E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(18): warning C4716: 'QueueLinkedEmpty': must return a value
+E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(6): warning C4716: 'QueueLinkedInit': must return a value
+E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(24): warning C4716: 'QueueLinkedAppend': must return a value
+E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(12): warning C4716: 'QueueLinkedFull': must return a value
+E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(30): warning C4716: 'QueueLinkedServe': must return a value
+E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(48): warning C4716: 'QueueLinkedClear': must return a value
+E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(36): warning C4716: 'QueueLinkedTop': must return a value
+E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(42): warning C4716: 'QueueLinkedSize': must return a value
+E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(54): warning C4716: 'QueueLinkedDisplay': must return a value
+E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(60): warning C4716: 'QueueLinkedTraverse': must return a value
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe
