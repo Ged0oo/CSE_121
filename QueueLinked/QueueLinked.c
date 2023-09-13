@@ -51,8 +51,18 @@ QueueLinkedReturn_t QueueLinkedAppend(QueueLinked_t* _queue, QueueEntry_t  _entr
 	else
 	{
 		QueueNode_t* newNode = createNode(_entry);
-		_queue->rear->next = newNode;
-		_queue->rear = newNode;
+
+		if (QUEUE_LINKED_EMPTY == QueueLinkedEmpty(_queue))
+		{
+			_queue->front = newNode;
+			_queue->rear = newNode;
+		}
+		else
+		{
+			_queue->rear->next = newNode;
+			_queue->rear = newNode;
+		}
+				
 		_queue->size += 1;
 		ret = QUEUE_LINKED_OK;
 	}
