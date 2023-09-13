@@ -15,10 +15,12 @@ int main()
     ret = QueueLinkedAppend(&queue, 6);
     ret = QueueLinkedAppend(&queue, 8);
 
+    ret = QueueLinkedSize(&queue, &size);
     ret = QueueLinkedTop(&queue, &qu);
 
     ret = QueueLinkedServe(&queue, &qu);
     ret = QueueLinkedServe(&queue, &qu);
+    ret = QueueLinkedSize(&queue, &size);
 
     ret = QueueLinkedTop(&queue, &qu);
 

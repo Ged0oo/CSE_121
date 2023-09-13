@@ -118,7 +118,17 @@ QueueLinkedReturn_t QueueLinkedTop(QueueLinked_t* _queue, QueueEntry_t* _entry)
 
 QueueLinkedReturn_t QueueLinkedSize(QueueLinked_t* _queue, int* _size)
 {
-
+	QueueLinkedReturn_t ret = QUEUE_LINKED_OK;
+	if (NULL == _queue)
+	{
+		ret = QUEUE_LINKED_NULL;
+	}
+	else
+	{
+		*_size = _queue->size;
+		ret = QUEUE_LINKED_OK;
+	}
+	return ret;
 }
 
 
