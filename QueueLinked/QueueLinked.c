@@ -160,7 +160,28 @@ QueueLinkedReturn_t QueueLinkedClear(QueueLinked_t* _queue)
 
 QueueLinkedReturn_t QueueLinkedDisplay(QueueLinked_t* _queue)
 {
-
+	QueueLinkedReturn_t ret = QUEUE_LINKED_OK;
+	if (NULL == _queue)
+	{
+		ret = QUEUE_LINKED_NULL;
+	}
+	else if (QUEUE_LINKED_EMPTY == QueueLinkedEmpty(_queue))
+	{
+		ret = QUEUE_LINKED_EMPTY;
+	}
+	else
+	{
+		printf("\nQueue Display\n[ ");
+		QueueNode_t* newNode = _queue->front;
+		while (newNode != NULL)
+		{
+			printf(" %d ", newNode->entry);
+			newNode = newNode->next;
+		}
+		printf(" ]\n");
+		ret = QUEUE_LINKED_OK;
+	}
+	return ret;
 }
 
 

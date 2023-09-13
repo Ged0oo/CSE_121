@@ -12,17 +12,12 @@ int main()
     ret = QueueLinkedEmpty(&queue);
 
     ret = QueueLinkedAppend(&queue, 3);
+    ret = QueueLinkedAppend(&queue, 8);
     ret = QueueLinkedAppend(&queue, 6);
     ret = QueueLinkedAppend(&queue, 8);
+    ret = QueueLinkedAppend(&queue, 4);
 
-    ret = QueueLinkedSize(&queue, &size);
-    ret = QueueLinkedTop(&queue, &qu);
-
-    ret = QueueLinkedServe(&queue, &qu);
-    ret = QueueLinkedServe(&queue, &qu);
-    ret = QueueLinkedSize(&queue, &size);
-
-    ret = QueueLinkedTop(&queue, &qu);
+   ret = QueueLinkedDisplay(&queue);
 
     printf("\nHello World\n");
     return 0;
