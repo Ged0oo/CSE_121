@@ -124,7 +124,21 @@ QueueReturn_t QueueArrayServe(Queue_t* _queue, QueueEntry_t* _entry)
 
 QueueReturn_t QueueArrayTop(Queue_t* _queue, QueueEntry_t* _entry)
 {
-
+	QueueReturn_t ret = QUEUE_OK;
+	if (NULL == _queue)
+	{
+		ret = QUEUE_NULL;
+	}
+	else if (QUEUE_EMPTY == QueueArrayEmpty(_queue))
+	{
+		ret = QUEUE_EMPTY;
+	}
+	else
+	{
+		*_entry = _queue->entry[_queue->front];
+		ret = QUEUE_OK;
+	}
+	return ret;
 }
 
 
