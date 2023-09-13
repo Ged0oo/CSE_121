@@ -1,7 +1,6 @@
 ﻿cl : command line  warning D9014: invalid value '2143' for '/wd'; assuming '5999'
-  QueueLinked.c
-E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(80,33): warning C4013: 'QueueArrayEmpty' undefined; assuming extern returning int
-E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(140): warning C4716: 'QueueLinkedDisplay': must return a value
-E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(102): warning C4716: 'QueueLinkedTop': must return a value
-E:\Projects\DataStructures\DataStructures\QueueLinked\QueueLinked.c(108): warning C4716: 'QueueLinkedSize': must return a value
+  main.c
+E:\Projects\DataStructures\DataStructures\main.c(14,37): warning C4022: 'QueueLinkedAppend': pointer mismatch for actual parameter 2
+E:\Projects\DataStructures\DataStructures\main.c(15,37): warning C4022: 'QueueLinkedAppend': pointer mismatch for actual parameter 2
+E:\Projects\DataStructures\DataStructures\main.c(16,37): warning C4022: 'QueueLinkedAppend': pointer mismatch for actual parameter 2
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe

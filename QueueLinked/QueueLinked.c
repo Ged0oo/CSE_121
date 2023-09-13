@@ -98,7 +98,21 @@ QueueLinkedReturn_t QueueLinkedServe(QueueLinked_t* _queue, QueueEntry_t* _entry
 
 QueueLinkedReturn_t QueueLinkedTop(QueueLinked_t* _queue, QueueEntry_t* _entry)
 {
-
+	QueueLinkedReturn_t ret = QUEUE_LINKED_OK;
+	if (NULL == _queue)
+	{
+		ret = QUEUE_LINKED_NULL;
+	}
+	else if (QUEUE_LINKED_EMPTY == QueueArrayEmpty(_queue))
+	{
+		ret = QUEUE_LINKED_EMPTY;
+	}
+	else
+	{
+		*_entry = _queue->front->entry;
+		ret = QUEUE_LINKED_OK;
+	}
+	return ret;
 }
 
 
