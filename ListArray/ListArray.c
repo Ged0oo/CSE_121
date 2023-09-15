@@ -89,7 +89,29 @@ ListReturn_t ListArrayRetrieve(List_t* _list, ListEntry_t* _entry)
 
 ListReturn_t ListArrayDelete(List_t* _list, ListEntry_t* _entry, int _index)
 {
-
+	ListReturn_t ret = LIST_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_NULL;
+	}
+	else if (_list->size < -1)
+	{
+		ret = LIST_NOT_INTIALIZED;
+	}
+	else if (LIST_FULL == ListArrayFull(_list))
+	{
+		ret = LIST_FULL;
+	}
+	else
+	{
+		for (int i = _index+1 ; i <= _list->size - 1 ; i++)
+		{
+			_list->entry[i - 1] = _list->entry[i];
+		}
+		_list->size -= 1;
+		ret = LIST_OK;
+	}
+	return ret;
 }
 
 
