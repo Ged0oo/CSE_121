@@ -88,7 +88,21 @@ ListReturn_t ListArraySize(List_t* _list, int* _size)
 
 ListReturn_t ListArrayClear(List_t* _list)
 {
-
+	ListReturn_t ret = LIST_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_NULL;
+	}
+	else if (LIST_EMPTY == ListArrayEmpty(_list))
+	{
+		ret = LIST_EMPTY;
+	}
+	else
+	{
+		_list->size = 0;
+		ret = LIST_OK;
+	}
+	return ret;
 }
 
 
