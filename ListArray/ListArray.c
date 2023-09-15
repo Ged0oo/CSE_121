@@ -72,7 +72,17 @@ ListReturn_t ListArrayTop(List_t* _list, ListEntry_t* _entry)
 
 ListReturn_t ListArraySize(List_t* _list, int* _size)
 {
-
+	ListReturn_t ret = LIST_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_NULL;
+	}
+	else
+	{
+		*_size = _list->size;
+		ret = LIST_OK;
+	}
+	return ret;
 }
 
 

@@ -3,8 +3,7 @@
 E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(58): warning C4716: 'ListArrayInsert': must return a value
 E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(64): warning C4716: 'ListArrayRetrieve': must return a value
 E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(70): warning C4716: 'ListArrayTop': must return a value
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(88): warning C4716: 'ListArrayDisplay': must return a value
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(76): warning C4716: 'ListArraySize': must return a value
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(82): warning C4716: 'ListArrayClear': must return a value
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(94): warning C4716: 'ListArrayTraverse': must return a value
+E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(92): warning C4716: 'ListArrayClear': must return a value
+E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(98): warning C4716: 'ListArrayDisplay': must return a value
+E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(104): warning C4716: 'ListArrayTraverse': must return a value
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe
