@@ -36,7 +36,19 @@ ListReturn_t ListArrayFull(List_t* _list)
 
 ListReturn_t ListArrayEmpty(List_t* _list)
 {
-
+	ListReturn_t ret = LIST_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_NULL;
+	}
+	else
+	{
+		if (0 ==_list->size)
+			ret = LIST_EMPTY;
+		else
+			ret = LIST_OK;
+	}
+	return ret;
 }
 
 
