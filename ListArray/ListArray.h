@@ -28,7 +28,7 @@ ListReturn_t ListArrayFull(List_t* _list);
 ListReturn_t ListArrayEmpty(List_t* _list);
 
 ListReturn_t ListArrayInsert(List_t* _list, ListEntry_t  _entry, int _index);
-ListReturn_t ListArrayRetrieve(List_t* _list, ListEntry_t* _entry);
+ListReturn_t ListArrayRetrieve(List_t* _list, ListEntry_t* _entry, int _index);
 ListReturn_t ListArrayDelete(List_t* _list, ListEntry_t* _entry, int _index);
 ListReturn_t ListArrayReplace(List_t* _list, ListEntry_t* _entry, int _index);
 

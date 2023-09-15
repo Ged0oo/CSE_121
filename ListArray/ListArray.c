@@ -81,9 +81,27 @@ ListReturn_t ListArrayInsert(List_t* _list, ListEntry_t  _entry, int _index)
 }
 
 
-ListReturn_t ListArrayRetrieve(List_t* _list, ListEntry_t* _entry)
+ListReturn_t ListArrayRetrieve(List_t* _list, ListEntry_t* _entry, int _index)
 {
-
+	ListReturn_t ret = LIST_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_NULL;
+	}
+	else if (_list->size < -1)
+	{
+		ret = LIST_NOT_INTIALIZED;
+	}
+	else if (LIST_EMPTY == ListArrayEmpty(_list))
+	{
+		ret = LIST_EMPTY;
+	}
+	else
+	{
+		*_entry = _list->entry[_index];
+		ret = LIST_OK;
+	}
+	return ret;
 }
 
 
@@ -98,9 +116,9 @@ ListReturn_t ListArrayDelete(List_t* _list, ListEntry_t* _entry, int _index)
 	{
 		ret = LIST_NOT_INTIALIZED;
 	}
-	else if (LIST_FULL == ListArrayFull(_list))
+	else if (LIST_EMPTY == ListArrayEmpty(_list))
 	{
-		ret = LIST_FULL;
+		ret = LIST_EMPTY;
 	}
 	else
 	{
