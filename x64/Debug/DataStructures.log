@@ -1,5 +1,4 @@
 ﻿cl : command line  warning D9014: invalid value '2143' for '/wd'; assuming '5999'
   ListArray.c
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(198,11): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'ListEntry_t'
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(139): warning C4716: 'ListArrayReplace': must return a value
+E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(216,11): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'ListEntry_t'
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe

@@ -135,7 +135,25 @@ ListReturn_t ListArrayDelete(List_t* _list, ListEntry_t* _entry, int _index)
 
 ListReturn_t ListArrayReplace(List_t* _list, ListEntry_t* _entry, int _index)
 {
-
+	ListReturn_t ret = LIST_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_NULL;
+	}
+	else if (_list->size < -1)
+	{
+		ret = LIST_NOT_INTIALIZED;
+	}
+	else if (LIST_EMPTY == ListArrayEmpty(_list))
+	{
+		ret = LIST_EMPTY;
+	}
+	else
+	{
+		_list->entry[_index] = _entry;
+		ret = LIST_OK;
+	}
+	return ret;
 }
 
 
