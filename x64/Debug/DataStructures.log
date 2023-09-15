@@ -1,12 +1,11 @@
 ﻿cl : command line  warning D9014: invalid value '2143' for '/wd'; assuming '5999'
   ListArray.c
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(22): warning C4716: 'ListArrayFull': must return a value
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(40): warning C4716: 'ListArrayRetrieve': must return a value
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(46): warning C4716: 'ListArrayTop': must return a value
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(52): warning C4716: 'ListArraySize': must return a value
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(58): warning C4716: 'ListArrayClear': must return a value
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(64): warning C4716: 'ListArrayDisplay': must return a value
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(70): warning C4716: 'ListArrayTraverse': must return a value
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(28): warning C4716: 'ListArrayEmpty': must return a value
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(34): warning C4716: 'ListArrayInsert': must return a value
+E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(40): warning C4716: 'ListArrayEmpty': must return a value
+E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(46): warning C4716: 'ListArrayInsert': must return a value
+E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(52): warning C4716: 'ListArrayRetrieve': must return a value
+E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(64): warning C4716: 'ListArraySize': must return a value
+E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(58): warning C4716: 'ListArrayTop': must return a value
+E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(76): warning C4716: 'ListArrayDisplay': must return a value
+E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(70): warning C4716: 'ListArrayClear': must return a value
+E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(82): warning C4716: 'ListArrayTraverse': must return a value
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe

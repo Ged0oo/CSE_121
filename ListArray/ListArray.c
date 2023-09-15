@@ -18,7 +18,19 @@ ListReturn_t ListArrayInit(List_t* _list)
 
 ListReturn_t ListArrayFull(List_t* _list)
 {
-
+	ListReturn_t ret = LIST_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_NULL;
+	}
+	else
+	{
+		if (_list->size >= MaxList)
+			ret = LIST_FULL;
+		else
+			ret = LIST_OK;
+	}
+	return ret;
 }
 
 
