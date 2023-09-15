@@ -1,9 +1,3 @@
 ﻿cl : command line  warning D9014: invalid value '2143' for '/wd'; assuming '5999'
-  main.c
-E:\Projects\DataStructures\DataStructures\main.c(14,37): warning C4022: 'QueueLinkedAppend': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(15,37): warning C4022: 'QueueLinkedAppend': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(16,37): warning C4022: 'QueueLinkedAppend': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(17,37): warning C4022: 'QueueLinkedAppend': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(18,37): warning C4022: 'QueueLinkedAppend': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(8,18): warning C4101: 'qu': unreferenced local variable
+  ListArray.c
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe
