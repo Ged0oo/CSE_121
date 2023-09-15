@@ -108,7 +108,30 @@ ListReturn_t ListArrayClear(List_t* _list)
 
 ListReturn_t ListArrayDisplay(List_t* _list)
 {
-
+	ListReturn_t ret = LIST_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_NULL;
+	}
+	else if (_list->size < -1)
+	{
+		ret = LIST_NOT_INTIALIZED;
+	}
+	else if (LIST_EMPTY == ListArrayFull(_list))
+	{
+		ret = LIST_EMPTY;
+	}
+	else
+	{
+		printf("\nList Display\n[ ");
+		for (int i = _list->size; i >= 0; i--)
+		{
+			printf(" %s ", _list->entry[i]);
+		}
+		printf(" ]\n");
+		ret = LIST_OK;
+	}
+	return ret;
 }
 
 
