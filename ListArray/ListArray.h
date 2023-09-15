@@ -16,11 +16,11 @@ typedef struct list
 
 typedef enum
 {
-	List_OK = 0,
-	List_NULL,
-	List_FULL,
-	List_EMPTY,
-	List_NOT_INTIALIZED
+	LIST_OK = 0,
+	LIST_NULL,
+	LIST_FULL,
+	LIST_EMPTY,
+	LIST_NOT_INTIALIZED
 }ListReturn_t;
 
 ListReturn_t ListArrayInit(List_t* _list);

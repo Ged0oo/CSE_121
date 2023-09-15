@@ -2,7 +2,17 @@
 
 ListReturn_t ListArrayInit(List_t* _list)
 {
-
+	ListReturn_t ret = LIST_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_NULL;
+	}
+	else
+	{
+		_list->size = 0;
+		ret = LIST_OK;
+	}
+	return ret;
 }
 
 
