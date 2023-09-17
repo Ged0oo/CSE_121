@@ -1,11 +1,14 @@
 ﻿cl : command line  warning D9014: invalid value '2143' for '/wd'; assuming '5999'
   ListLinked.c
-  main.c
-E:\Projects\DataStructures\DataStructures\main.c(14,34): warning C4022: 'ListArrayInsert': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(15,34): warning C4022: 'ListArrayInsert': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(16,34): warning C4022: 'ListArrayInsert': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(17,34): warning C4022: 'ListArrayInsert': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(18,34): warning C4022: 'ListArrayInsert': pointer mismatch for actual parameter 2
-E:\Projects\DataStructures\DataStructures\main.c(7,17): warning C4101: 'entry': unreferenced local variable
-  Generating Code...
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(24): warning C4716: 'ListLinkedInsert': must return a value
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(6): warning C4716: 'ListLinkedInit': must return a value
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(18): warning C4716: 'ListLinkedEmpty': must return a value
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(30): warning C4716: 'ListLinkedRetrieve': must return a value
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(36): warning C4716: 'ListLinkedDelete': must return a value
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(12): warning C4716: 'ListLinkedFull': must return a value
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(54): warning C4716: 'ListLinkedClear': must return a value
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(42): warning C4716: 'ListLinkedReplace': must return a value
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(60): warning C4716: 'ListLinkedDisplay': must return a value
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(48): warning C4716: 'ListLinkedSize': must return a value
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(66): warning C4716: 'ListLinkedTraverse': must return a value
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe
