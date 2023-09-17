@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ListArray\ListArray.c" />
+    <ClCompile Include="ListLinked\ListLinked.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="QueueArray\QueueArray.c" />
     <ClCompile Include="QueueLinked\QueueLinked.c" />
@@ -137,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ListArray\ListArray.h" />
+    <ClInclude Include="ListLinked\ListLinked.h" />
     <ClInclude Include="QueueArray\QueueArray.h" />
     <ClInclude Include="QueueLinked\QueueLinked.h" />
     <ClInclude Include="StackArray\StackArray.h" />

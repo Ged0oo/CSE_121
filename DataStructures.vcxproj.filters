@@ -28,6 +28,9 @@
     <Filter Include="ListArray">
       <UniqueIdentifier>{36472d8a-5ff2-49f8-8eb8-525456033c29}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ListLinked">
+      <UniqueIdentifier>{9f1c9230-5ea9-4215-9f34-3001192c915a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="StackArray\StackArray.c">
@@ -48,6 +51,9 @@
     <ClCompile Include="ListArray\ListArray.c">
       <Filter>ListArray</Filter>
     </ClCompile>
+    <ClCompile Include="ListLinked\ListLinked.c">
+      <Filter>ListLinked</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StackArray\StackArray.h">
@@ -64,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="ListArray\ListArray.h">
       <Filter>ListArray</Filter>
+    </ClInclude>
+    <ClInclude Include="ListLinked\ListLinked.h">
+      <Filter>ListLinked</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

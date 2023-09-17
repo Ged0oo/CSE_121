@@ -1,4 +1,11 @@
 ﻿cl : command line  warning D9014: invalid value '2143' for '/wd'; assuming '5999'
-  ListArray.c
-E:\Projects\DataStructures\DataStructures\ListArray\ListArray.c(216,11): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'ListEntry_t'
+  ListLinked.c
+  main.c
+E:\Projects\DataStructures\DataStructures\main.c(14,34): warning C4022: 'ListArrayInsert': pointer mismatch for actual parameter 2
+E:\Projects\DataStructures\DataStructures\main.c(15,34): warning C4022: 'ListArrayInsert': pointer mismatch for actual parameter 2
+E:\Projects\DataStructures\DataStructures\main.c(16,34): warning C4022: 'ListArrayInsert': pointer mismatch for actual parameter 2
+E:\Projects\DataStructures\DataStructures\main.c(17,34): warning C4022: 'ListArrayInsert': pointer mismatch for actual parameter 2
+E:\Projects\DataStructures\DataStructures\main.c(18,34): warning C4022: 'ListArrayInsert': pointer mismatch for actual parameter 2
+E:\Projects\DataStructures\DataStructures\main.c(7,17): warning C4101: 'entry': unreferenced local variable
+  Generating Code...
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe
