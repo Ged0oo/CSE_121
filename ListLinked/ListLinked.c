@@ -109,7 +109,28 @@ ListLinkedReturn_t ListLinkedClear(ListLinked_t* _list)
 
 ListLinkedReturn_t ListLinkedDisplay(ListLinked_t* _list)
 {
-
+	ListLinkedReturn_t ret = LIST_LINKED_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_LINKED_NULL;
+	}
+	else if (0 == _list->size)
+	{
+		ret = LIST_LINKED_EMPTY;
+	}
+	else
+	{
+		printf("\nQueue Display\n[ ");
+		ListNode_t* _node = _list->head;
+		while (_node)
+		{
+			printf(" %d ", _node->entry);
+			_node = _node->next;
+		}
+		printf(" ]\n");
+		ret = LIST_LINKED_OK;
+	}
+	return ret;
 }
 
 

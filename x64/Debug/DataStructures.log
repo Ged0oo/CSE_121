@@ -1,8 +1,9 @@
 ﻿cl : command line  warning D9014: invalid value '2143' for '/wd'; assuming '5999'
   ListLinked.c
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(127,11): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'ListLinkedEntry_t'
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(127,11): warning C4313: 'printf': '%d' in format string conflicts with argument 1 of type 'ListLinkedEntry_t'
 E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(42): warning C4716: 'ListLinkedInsert': must return a value
 E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(48): warning C4716: 'ListLinkedRetrieve': must return a value
 E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(54): warning C4716: 'ListLinkedDelete': must return a value
 E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(60): warning C4716: 'ListLinkedReplace': must return a value
-E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(113): warning C4716: 'ListLinkedDisplay': must return a value
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe
