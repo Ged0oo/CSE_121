@@ -2,7 +2,18 @@
 
 ListLinkedReturn_t ListLinkedInit(ListLinked_t* _list)
 {
-
+	ListLinkedReturn_t ret = LIST_LINKED_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_LINKED_NULL;
+	}
+	else
+	{
+		_list->head = NULL;
+		_list->size = 0;
+		ret = LIST_LINKED_OK;
+	}
+	return ret;
 }
 
 
