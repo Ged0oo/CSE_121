@@ -82,7 +82,28 @@ ListLinkedReturn_t ListLinkedSize(ListLinked_t* _list, int* _size)
 
 ListLinkedReturn_t ListLinkedClear(ListLinked_t* _list)
 {
-
+	ListLinkedReturn_t ret = LIST_LINKED_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_LINKED_NULL;
+	}
+	else if (0 == _list->size)
+	{
+		ret = LIST_LINKED_EMPTY;
+	}
+	else
+	{
+		ListNode_t* _node;
+		while (_list->head)
+		{
+			_node = _list->head->next;
+			free(_list->head);
+			_list->head = _node;
+		}
+		_list->size = 0;
+		ret = LIST_LINKED_OK;
+	}
+	return ret;
 }
 
 
