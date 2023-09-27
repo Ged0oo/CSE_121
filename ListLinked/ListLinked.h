@@ -28,7 +28,6 @@ typedef enum
 }ListLinkedReturn_t;
 
 ListLinkedReturn_t ListLinkedInit(ListLinked_t* _list);
-ListLinkedReturn_t ListLinkedFull(ListLinked_t* _list);
 ListLinkedReturn_t ListLinkedEmpty(ListLinked_t* _list);
 					   
 ListLinkedReturn_t ListLinkedInsert(ListLinked_t* _list, ListLinkedEntry_t  _entry, int _index);
