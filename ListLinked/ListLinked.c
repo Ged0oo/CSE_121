@@ -17,7 +17,6 @@ ListLinkedReturn_t ListLinkedInit(ListLinked_t* _list)
 }
 
 
-
 ListLinkedReturn_t ListLinkedEmpty(ListLinked_t* _list)
 {
 	ListLinkedReturn_t ret = LIST_LINKED_OK;
@@ -29,7 +28,7 @@ ListLinkedReturn_t ListLinkedEmpty(ListLinked_t* _list)
 	{
 		if(0 == _list -> size)
 		{
-			ret = LIST_LINKED_OK;
+			ret = LIST_LINKED_EMPTY;
 		}
 		else { /* Nothing */ }
 	}
@@ -63,7 +62,21 @@ ListLinkedReturn_t ListLinkedReplace(ListLinked_t* _list, ListLinkedEntry_t* _en
 
 ListLinkedReturn_t ListLinkedSize(ListLinked_t* _list, int* _size)
 {
-
+	ListLinkedReturn_t ret = LIST_LINKED_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_LINKED_NULL;
+	}
+	else if (0 == _list->size)
+	{
+		ret = LIST_LINKED_EMPTY;
+	}
+	else
+	{
+		*_size = _list->size;
+		ret = LIST_LINKED_OK;
+	}
+	return ret;
 }
 
 
