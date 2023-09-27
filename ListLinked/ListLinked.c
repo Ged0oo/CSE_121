@@ -115,5 +115,24 @@ ListLinkedReturn_t ListLinkedDisplay(ListLinked_t* _list)
 
 ListLinkedReturn_t ListLinkedTraverse(ListLinked_t* _list, void (*pvisit)(ListLinkedEntry_t))
 {
-
+	ListLinkedReturn_t ret = LIST_LINKED_OK;
+	if (NULL == _list)
+	{
+		ret = LIST_LINKED_NULL;
+	}
+	else if (0 == _list->size)
+	{
+		ret = LIST_LINKED_EMPTY;
+	}
+	else
+	{
+		ListNode_t* _node = _list->head;
+		while (_node)
+		{
+			(*pvisit)(_node->entry);
+			_node = _node->next;
+		}
+		ret = LIST_LINKED_OK;
+	}
+	return ret;
 }

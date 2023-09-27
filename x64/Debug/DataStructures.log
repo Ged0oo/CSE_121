@@ -2,8 +2,7 @@
   ListLinked.c
 E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(42): warning C4716: 'ListLinkedInsert': must return a value
 E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(48): warning C4716: 'ListLinkedRetrieve': must return a value
-E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(60): warning C4716: 'ListLinkedReplace': must return a value
 E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(54): warning C4716: 'ListLinkedDelete': must return a value
+E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(60): warning C4716: 'ListLinkedReplace': must return a value
 E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(113): warning C4716: 'ListLinkedDisplay': must return a value
-E:\Projects\DataStructures\DataStructures\ListLinked\ListLinked.c(119): warning C4716: 'ListLinkedTraverse': must return a value
   DataStructures.vcxproj -> E:\Projects\DataStructures\x64\Debug\DataStructures.exe
